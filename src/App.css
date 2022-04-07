@@ -1,0 +1,72 @@
+button,form{
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+#header{
+  text-align: center;
+  /* background-image: url(../img/Teddy-peaking.jpg); */
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: burlywood;
+  text-shadow: -1px 1px 2px #000,
+        1px 1px 2px #000,
+        1px -1px 0 #000,
+        -1px -1px 0 #000;
+  border-radius: 0;
+  border-bottom: 10px solid burlywood;
+  padding: 2%;
+}
+
+form{
+  font-weight: bold;
+  padding: 2%;    
+}
+
+.fixTableHead thead th {
+  background-color: burlywood;
+  position: sticky;
+  top: 0;
+}
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+table,th,tr,td{
+  border: 1px solid black;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #9d79619a;
+}
+
+tbody tr:nth-child(even) {
+  background-color: rgba(222, 184, 135, 0.65);
+}
+
+
+#reset-btn{
+  color: burlywood;
+  background-color: red;
+  padding: 8px 18px;
+  font-size: 14px;
+  border-radius: 10px; 
+}
+
+#startCoinCeremony-btn{
+  color: yellow;
+  background-color: green;
+  padding: 8px 18px;
+  font-size: 14px;
+  border-radius: 10px;    
+}
+
+#footer{
+  font-weight: bolder;
+  background-color: burlywood;
+}
