@@ -34,24 +34,24 @@ form{
 table{
   width: 100%;
   border-collapse: collapse;
-  text-align: center;
+  /* text-align: center; */
 }
 
 table,th,tr,td{
   border: 1px solid black;
 }
 
-tbody tr:nth-child(odd) {
+tr:nth-child(odd) {
   background-color: #9d79619a;
 }
 
-tbody tr:nth-child(even) {
+tr:nth-child(even) {
   background-color: rgba(222, 184, 135, 0.65);
 }
 
 
 #reset-btn{
-  color: burlywood;
+  color: white;
   background-color: red;
   padding: 8px 18px;
   font-size: 14px;

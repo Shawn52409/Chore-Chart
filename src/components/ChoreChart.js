@@ -14,19 +14,19 @@ export default function ChoreChart() {
                 <table>
                     <thead>
                         <tr>
-                        <th>Do Not Count</th>
-                        <th class="text-left pl-3">Chore Name</th>
-                        <th id="caseyName">Casey</th>
-                        <th id="connorName">Connor</th>
+                        <th className='text-center'>Do Not Count</th>
+                        <th className="text-left pl-3">Chore Name</th>
+                        <th className="text-center" id="caseyName">Casey</th>
+                        <th className="text-center" id="connorName">Connor</th>
                         </tr>
                     </thead>            
                     {choreList.map((choreList, idx) => {
                         return(
                             <tr>
-                                <td><input type="checkbox" name={`${choreList.chore}`}/></td>
+                                <td className='text-center'><input type="checkbox" name={`${choreList.chore}`}/></td>
                                 <td className="text-left pl-3">{choreList.choreName}</td>
-                                <td><input type="checkbox" name={`${choreList.caseyCompletedChore}`} id={`caseyCompletedChore${[idx]}`}/></td>
-                                <td><input type="checkbox" name={`${choreList.connorCompletedChore}`} id={`connorCompletedChore${[idx]}`}/></td>
+                                <td className='text-center'><input type="checkbox" name={`${choreList.caseyCompletedChore}`} id={`caseyCompletedChore${[idx]}`}/></td>
+                                <td className='text-center'><input type="checkbox" name={`${choreList.connorCompletedChore}`} id={`connorCompletedChore${[idx]}`}/></td>
                             </tr>
                         )
                     })}

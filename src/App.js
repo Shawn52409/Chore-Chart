@@ -9,7 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 import NavBar from './components/Navbar';
-import ChoreChart from './components/ChoresChart';
+import ChoreChart from './components/ChoreChart';
 import Results from './components/Results';
 import BonusResults from './components/BonusResult';
 import Footer from './components/Footer'
@@ -24,6 +24,7 @@ function App() {
           <NavBar />
           <Switch>
             <Route exact path="/" component ={ChoreChart} />
+            <Route path="/Chore-Chart" component={ChoreChart} />
             <Route exact path="/results" component={Results} />
             <Route exact path="/bonusresults" component={BonusResults} />
             <Route render={() => <h1 className="display-2">Wrong page!</h1>} />
